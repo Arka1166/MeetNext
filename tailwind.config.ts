@@ -27,6 +27,14 @@ const config = {
           1: '#0E78F9',
           2: '#C9DDFF',
         }, 
+        orange: {
+          1: '#FF742E',
+          2: '#F9A90E',
+
+        },
+        purple: {
+          1: '#830EF9'
+        },
       },
       backgroundImage: {
         hero: "url('/images/hero-background.png')",

@@ -1,11 +1,10 @@
+import MeetingTypeList from "@/components/MeetingTypeList";
 import React from "react";
 
 const Home = () => {
   const now = new Date();
-  let options1 = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
-  let options2 = { hour: '2-digit', minute: '2-digit', hour12: true };
-  const date=now.toLocaleDateString('en-US', options1);
-  const time=now.toLocaleTimeString('en-US', options2);
+  const date=now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
+  const time=now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
 
   return (
     <section className="flex size-full flex-col gap-10 text-white">
@@ -18,6 +17,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <MeetingTypeList />
     </section>
   );
 };
