@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <ClerkProvider appearance={{
           layout: {
-            logoImageUrl: "/icons/yoom-logo.svg",
+            logoImageUrl: "/icons/meetnext-logoo.svg",
             socialButtonsVariant: "iconButton",
 
           },
